@@ -65,11 +65,6 @@ public class DBHandler extends SQLiteOpenHelper {
 
         if (c.moveToFirst()){
             do {
-//                DataModel u = new DataModel();
-//                u.setId(Integer.parseInt(c.getString(0)));
-//                u.setNama(c.getString(1));
-//                u.setPassword(c.getString(2));
-//                userList.add(u);
                 userList.add("ID: "+c.getString(0)+"\nNAMA: "+c.getString(1)+"\nPASS: "+c.getString(2));
             }while (c.moveToNext());
         }

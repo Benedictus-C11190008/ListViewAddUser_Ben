@@ -40,9 +40,6 @@ public class MainActivity2 extends AppCompatActivity {
         bttopg1.setOnClickListener(myClickListener);
         mydb = new DBHandler(this);
         List<ArrayList> data = mydb.getAll();
-//        id = new ArrayList<>();
-//        nama = new ArrayList<>();
-//        pass = new ArrayList<>();
 
         mylv = (ListView) findViewById(R.id.lvdb);
         CustomAdapter cAdapter = new CustomAdapter(getApplicationContext(), data);

@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mydb = new DBHandler(this);
-        addUser();
         bttopg2 = findViewById(R.id.buttontopg2);
         bttopg2.setOnClickListener(myClickListener);
         btadduser = findViewById(R.id.buttonadduser);
@@ -59,10 +58,6 @@ public class MainActivity extends AppCompatActivity {
         tvpass = (TextView) findViewById(R.id.textViewpass);
         etname = findViewById(R.id.editTextTextPersonName);
         etpass = findViewById(R.id.editTextTextPassword);
-    }
-    public void addUser() {
-//        usermodel = new DataModel(1, dbname, dbpass);
-//        mydb.insertUser(usermodel);
     }
 
 }
